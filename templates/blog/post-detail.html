@@ -11,6 +11,7 @@
 {% row %}
     <div class="col">
         {{ post.content|safe }}
+        {% include "blog/post-comments.html" %}
         {% recent_posts post %}
 
     </div>
